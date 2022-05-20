@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.form {
+  margin: 0px 10%;
+}
+
+.form-field-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+
+.form-section label {
+  margin-right: 10px;
+}
+
+.form-section label:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.form-section input {
+  min-width: 150px;
+}
+
+.form-section h3 {
+  text-align: left;
+}
+
+.save-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: var(--current);
+}
+
+.main-score-container {
+  padding: 20px 10%;
+  background-color: #d0d0d0;
+  margin-top: 30px;
+}
+
+.individual-score-container {
+  padding: 20px 10%;
+  background: #d0d0d0;
+  display: flex;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    margin: 0px 20px;
+  }
+
+  .form-field-container {
+    flex-direction: column;
+  }
+
+  .individual-score-container {
+    flex-direction: column;
+  }
+
+  .form-section label:not(:first-of-type) {
+    margin-left: unset;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .form-section input {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-section label {
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+}

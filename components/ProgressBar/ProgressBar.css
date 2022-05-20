@@ -1,0 +1,59 @@
+.progressbar {
+    width: 100%;
+    background-color: var(--grey);
+    height: 20px;
+    position: relative;
+    border-radius: 20px;
+    color: var(--darkgrey);
+}
+
+.progressbar__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transition: 0.3s ease;
+}
+
+.progressbar__line--target {
+    background-color: var(--target);
+    text-align: right;
+    padding-right: 20px;
+}
+
+.progressbar__line--current {
+    background-color: var(--current);
+}
+
+.progressbar__pointer-container {
+    position: absolute;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.progressbar__pointer {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top-width: 15px;
+    border-top-style: solid;
+}
+
+.progressbar__pointer--target {
+    border-top-color: var(--target);
+}
+
+.progressbar__pointer--current {
+    border-top-color: var(--current);
+}
+
+.progressbar__pointer-content {
+    margin-bottom: 8px;
+}
